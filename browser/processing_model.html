@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Processing Model | askura</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="askura's weblog">
+    <link rel="preload" href="/weblog/assets/css/0.styles.bd84e9de.css" as="style"><link rel="preload" href="/weblog/assets/js/app.73afb69f.js" as="script"><link rel="preload" href="/weblog/assets/js/2.b1d48028.js" as="script"><link rel="preload" href="/weblog/assets/js/12.1aa44b2f.js" as="script"><link rel="prefetch" href="/weblog/assets/js/10.5e5257d2.js"><link rel="prefetch" href="/weblog/assets/js/11.ac268403.js"><link rel="prefetch" href="/weblog/assets/js/13.d254d810.js"><link rel="prefetch" href="/weblog/assets/js/14.99e6dc6d.js"><link rel="prefetch" href="/weblog/assets/js/15.b4307193.js"><link rel="prefetch" href="/weblog/assets/js/16.889db329.js"><link rel="prefetch" href="/weblog/assets/js/17.f907b394.js"><link rel="prefetch" href="/weblog/assets/js/18.eea8f088.js"><link rel="prefetch" href="/weblog/assets/js/19.84c994ab.js"><link rel="prefetch" href="/weblog/assets/js/20.91a0790a.js"><link rel="prefetch" href="/weblog/assets/js/21.f225089f.js"><link rel="prefetch" href="/weblog/assets/js/22.4271b9d7.js"><link rel="prefetch" href="/weblog/assets/js/23.29f5f4b4.js"><link rel="prefetch" href="/weblog/assets/js/24.12b1d527.js"><link rel="prefetch" href="/weblog/assets/js/25.e84d37ad.js"><link rel="prefetch" href="/weblog/assets/js/26.b50519d9.js"><link rel="prefetch" href="/weblog/assets/js/27.15235234.js"><link rel="prefetch" href="/weblog/assets/js/28.8a9df4eb.js"><link rel="prefetch" href="/weblog/assets/js/29.9b595a2b.js"><link rel="prefetch" href="/weblog/assets/js/3.94d94b8f.js"><link rel="prefetch" href="/weblog/assets/js/30.cf77db1b.js"><link rel="prefetch" href="/weblog/assets/js/31.27e718fb.js"><link rel="prefetch" href="/weblog/assets/js/32.a51ac16d.js"><link rel="prefetch" href="/weblog/assets/js/33.e2fb7862.js"><link rel="prefetch" href="/weblog/assets/js/34.4f32cadf.js"><link rel="prefetch" href="/weblog/assets/js/4.a24ff65c.js"><link rel="prefetch" href="/weblog/assets/js/5.a6ef23be.js"><link rel="prefetch" href="/weblog/assets/js/6.c64d5164.js"><link rel="prefetch" href="/weblog/assets/js/7.05e16fa0.js"><link rel="prefetch" href="/weblog/assets/js/8.f29158ab.js"><link rel="prefetch" href="/weblog/assets/js/9.7ebc8f6b.js">
+    <link rel="stylesheet" href="/weblog/assets/css/0.styles.bd84e9de.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/weblog/" class="home-link router-link-active"><!----> <span class="site-name">askura</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTTP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/net/http/cookie.html" class="nav-link">
+  COOKIE
+</a></li></ul></li><li class="dropdown-item"><h4>
+          web安全
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/safety/web/csrf.html" class="nav-link">
+  CSRF
+</a></li><li class="dropdown-subitem"><a href="/weblog/safety/web/xss.html" class="nav-link">
+  XSS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="GIT" class="dropdown-title"><span class="title">GIT</span> <span class="arrow down"></span></button> <button type="button" aria-label="GIT" class="mobile-dropdown-title"><span class="title">GIT</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          远程仓库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/git/remotes/clone.html" class="nav-link">
+  clone
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/fetch.html" class="nav-link">
+  fetch
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/pull.html" class="nav-link">
+  pull
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/push.html" class="nav-link">
+  push
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/git/branch.html" class="nav-link">
+  branch
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/git/checkout.html" class="nav-link">
+  checkout
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><span class="title">CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CSS" class="mobile-dropdown-title"><span class="title">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Layout
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/css/layout/holy_grail.html" class="nav-link">
+  圣杯布局揭秘
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/css/contain_block.html" class="nav-link">
+  包含块(position定位)
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/css/stacking_context.html" class="nav-link">
+  Stacking Context
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/css/box_model.html" class="nav-link">
+  Box Model
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="VIM" class="dropdown-title"><span class="title">VIM</span> <span class="arrow down"></span></button> <button type="button" aria-label="VIM" class="mobile-dropdown-title"><span class="title">VIM</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          插件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/vim/plugins/airline.html" class="nav-link">
+  airline
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="TMUX" class="dropdown-title"><span class="title">TMUX</span> <span class="arrow down"></span></button> <button type="button" aria-label="TMUX" class="mobile-dropdown-title"><span class="title">TMUX</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/tmux/theme.html" class="nav-link">
+  theme
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="REDUX" class="dropdown-title"><span class="title">REDUX</span> <span class="arrow down"></span></button> <button type="button" aria-label="REDUX" class="mobile-dropdown-title"><span class="title">REDUX</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/redux/struct.html" class="nav-link">
+  我理解的redux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Browser" class="dropdown-title"><span class="title">Browser</span> <span class="arrow down"></span></button> <button type="button" aria-label="Browser" class="mobile-dropdown-title"><span class="title">Browser</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Net
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/browser/net/cross_domain.html" class="nav-link">
+  Cross Domain
+</a></li><li class="dropdown-subitem"><a href="/weblog/browser/net/jsonp.html" class="nav-link">
+  JSONP
+</a></li><li class="dropdown-subitem"><a href="/weblog/browser/net/iframe_cross.html" class="nav-link">
+  IFrame Cross
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Render
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/browser/render/parse_document.html" class="nav-link">
+  Parse Document
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/browser/processing_model.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Processing Model
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ES6
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/javascript/ES6/Promise/api.html" class="nav-link">
+  Promise API
+</a></li><li class="dropdown-subitem"><a href="/weblog/javascript/ES6/Promise/polyfill.html" class="nav-link">
+  Promise Polyfill
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/javascript/regExp.html" class="nav-link">
+  RegExp
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/javascript/function.html" class="nav-link">
+  函数
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工程化" class="dropdown-title"><span class="title">前端工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工程化" class="mobile-dropdown-title"><span class="title">前端工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/engineering/tree_shaking.html" class="nav-link">
+  Tree Shaking
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="设计模式" class="dropdown-title"><span class="title">设计模式</span> <span class="arrow down"></span></button> <button type="button" aria-label="设计模式" class="mobile-dropdown-title"><span class="title">设计模式</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          OOP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/design_pattern/oop/decorator.html" class="nav-link">
+  Decorator Pattern
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="一些有意思的东西" class="dropdown-title"><span class="title">一些有意思的东西</span> <span class="arrow down"></span></button> <button type="button" aria-label="一些有意思的东西" class="mobile-dropdown-title"><span class="title">一些有意思的东西</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/interesting/git_credential.html" class="nav-link">
+  讨厌的credential.helper=osxkeychain
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/vue/preface.html" class="nav-link">
+  对Vue的认知
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Threejs" class="dropdown-title"><span class="title">Threejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Threejs" class="mobile-dropdown-title"><span class="title">Threejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/threejs/struct.html" class="nav-link">
+  初识webgl
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTTP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/net/http/cookie.html" class="nav-link">
+  COOKIE
+</a></li></ul></li><li class="dropdown-item"><h4>
+          web安全
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/safety/web/csrf.html" class="nav-link">
+  CSRF
+</a></li><li class="dropdown-subitem"><a href="/weblog/safety/web/xss.html" class="nav-link">
+  XSS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="GIT" class="dropdown-title"><span class="title">GIT</span> <span class="arrow down"></span></button> <button type="button" aria-label="GIT" class="mobile-dropdown-title"><span class="title">GIT</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          远程仓库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/git/remotes/clone.html" class="nav-link">
+  clone
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/fetch.html" class="nav-link">
+  fetch
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/pull.html" class="nav-link">
+  pull
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/push.html" class="nav-link">
+  push
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/git/branch.html" class="nav-link">
+  branch
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/git/checkout.html" class="nav-link">
+  checkout
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><span class="title">CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CSS" class="mobile-dropdown-title"><span class="title">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Layout
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/css/layout/holy_grail.html" class="nav-link">
+  圣杯布局揭秘
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/css/contain_block.html" class="nav-link">
+  包含块(position定位)
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/css/stacking_context.html" class="nav-link">
+  Stacking Context
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/css/box_model.html" class="nav-link">
+  Box Model
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="VIM" class="dropdown-title"><span class="title">VIM</span> <span class="arrow down"></span></button> <button type="button" aria-label="VIM" class="mobile-dropdown-title"><span class="title">VIM</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          插件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/vim/plugins/airline.html" class="nav-link">
+  airline
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="TMUX" class="dropdown-title"><span class="title">TMUX</span> <span class="arrow down"></span></button> <button type="button" aria-label="TMUX" class="mobile-dropdown-title"><span class="title">TMUX</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/tmux/theme.html" class="nav-link">
+  theme
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="REDUX" class="dropdown-title"><span class="title">REDUX</span> <span class="arrow down"></span></button> <button type="button" aria-label="REDUX" class="mobile-dropdown-title"><span class="title">REDUX</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/redux/struct.html" class="nav-link">
+  我理解的redux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Browser" class="dropdown-title"><span class="title">Browser</span> <span class="arrow down"></span></button> <button type="button" aria-label="Browser" class="mobile-dropdown-title"><span class="title">Browser</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Net
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/browser/net/cross_domain.html" class="nav-link">
+  Cross Domain
+</a></li><li class="dropdown-subitem"><a href="/weblog/browser/net/jsonp.html" class="nav-link">
+  JSONP
+</a></li><li class="dropdown-subitem"><a href="/weblog/browser/net/iframe_cross.html" class="nav-link">
+  IFrame Cross
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Render
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/browser/render/parse_document.html" class="nav-link">
+  Parse Document
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/browser/processing_model.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Processing Model
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ES6
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/javascript/ES6/Promise/api.html" class="nav-link">
+  Promise API
+</a></li><li class="dropdown-subitem"><a href="/weblog/javascript/ES6/Promise/polyfill.html" class="nav-link">
+  Promise Polyfill
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/javascript/regExp.html" class="nav-link">
+  RegExp
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/javascript/function.html" class="nav-link">
+  函数
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工程化" class="dropdown-title"><span class="title">前端工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工程化" class="mobile-dropdown-title"><span class="title">前端工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/engineering/tree_shaking.html" class="nav-link">
+  Tree Shaking
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="设计模式" class="dropdown-title"><span class="title">设计模式</span> <span class="arrow down"></span></button> <button type="button" aria-label="设计模式" class="mobile-dropdown-title"><span class="title">设计模式</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          OOP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/design_pattern/oop/decorator.html" class="nav-link">
+  Decorator Pattern
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="一些有意思的东西" class="dropdown-title"><span class="title">一些有意思的东西</span> <span class="arrow down"></span></button> <button type="button" aria-label="一些有意思的东西" class="mobile-dropdown-title"><span class="title">一些有意思的东西</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/interesting/git_credential.html" class="nav-link">
+  讨厌的credential.helper=osxkeychain
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/vue/preface.html" class="nav-link">
+  对Vue的认知
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Threejs" class="dropdown-title"><span class="title">Threejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Threejs" class="mobile-dropdown-title"><span class="title">Threejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/threejs/struct.html" class="nav-link">
+  初识webgl
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Processing Model</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/weblog/browser/processing_model.html#event-loop" class="sidebar-link">Event Loop</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#什么是event-loop" class="sidebar-link">什么是Event Loop</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#event-loop-流程" class="sidebar-link">Event Loop 流程</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#task和job事件" class="sidebar-link">Task和Job事件</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#event-loop的开始" class="sidebar-link">Event Loop的开始</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#实践" class="sidebar-link">实践</a></li></ul></li><li><a href="/weblog/browser/processing_model.html#ui-render" class="sidebar-link">UI Render</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#transition动画" class="sidebar-link">Transition动画</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#gui引擎的唤醒" class="sidebar-link">GUI引擎的唤醒</a></li></ul></li><li><a href="/weblog/browser/processing_model.html#settimeout-setinterval-requsetanimationframe差异" class="sidebar-link">setTimeout, setInterval, requsetAnimationFrame差异</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#浏览器是如何渲染元素的" class="sidebar-link">浏览器是如何渲染元素的</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#跳帧" class="sidebar-link">跳帧</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#卡顿" class="sidebar-link">卡顿</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#setinterval" class="sidebar-link">setInterval</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#settimeout" class="sidebar-link">setTimeout</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/processing_model.html#requestanimationframe" class="sidebar-link">requestAnimationFrame</a></li></ul></li><li><a href="/weblog/browser/processing_model.html#node-event-loop" class="sidebar-link">Node Event Loop</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="processing-model"><a href="#processing-model" class="header-anchor">#</a> Processing Model</h1> <p>我们知道<code>javascript</code>是单线程, 但是在实际应用中无法避免的要使用到异步操作</p> <p>e.g: <code>xhr请求</code>, <code>click event</code>, <code>timout</code>...</p> <p>既然<code>javascript</code>存在一些异步API, 那么<strong>js引擎</strong>如何调度同步脚本和异步脚本就成为了一个很重要的问题</p> <p><strong>js引擎</strong>对同步/异步脚本的调度过程就是本章要讲述的<code>Processing Model</code>, 也就是常说的<code>Event Loop</code></p> <div class="custom-block warning"><p class="custom-block-title">- 注意</p> <p>本篇如果没有特意提及都是指 浏览器引擎的<code>Event Loop</code></p> <p>对于Node环境下的<code>Event Loop</code>, 没有做过详细的学习, 目前暂不提及</p></div> <p>看一下下面的🌰 (这是大学的时候面试今日头条的一个面试题, 也是通过这个面试题才对<code>Event Loop</code>有了深入的学习)</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 写出输出顺序</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'script start'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">async1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">await</span> <span class="token function">async2</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'async1 end'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">async2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'async2 end'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">async1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'setTimeout'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+
+<span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token parameter">resolve</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Promise'</span><span class="token punctuation">)</span>
+  <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'promise1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'promise2'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'script end'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 这里直接给出答案</span>
+<span class="token comment">// script start</span>
+<span class="token comment">// async2 end</span>
+<span class="token comment">// Promise</span>
+<span class="token comment">// script end</span>
+<span class="token comment">// async1 end</span>
+<span class="token comment">// promise1</span>
+<span class="token comment">// promise2</span>
+<span class="token comment">// setTimeout</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><p>如果你能对上面的顺序给出合理的解释, 我相信你已经掌握<code>Event Loop</code>了, 但是我还是建议你看阅读一下</p> <ul><li><p><a href="/weblog/browser/processing_model.html#ui-render">UI Render</a></p></li> <li><p><a href="/weblog/browser/processing_model.html#settimeout-setinterval-requsetanimationframe差异">setTimeout...</a></p></li></ul> <p>可能你会得到一些额外的收获</p> <h2 id="event-loop"><a href="#event-loop" class="header-anchor">#</a> Event Loop</h2> <h3 id="什么是event-loop"><a href="#什么是event-loop" class="header-anchor">#</a> 什么是Event Loop</h3> <p>前面提到了<code>Event Loop</code>就是<strong>js引擎</strong>对同步/异步任务的调度算法</p> <p>如果你的英文能力可以的话, 我推荐你阅读<a href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model" target="_blank" rel="noopener noreferrer">event-loop-process-model-standard<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>或者你也可以看一下这篇文章<a href="https://github.com/aooy/blog/issues/5" target="_blank" rel="noopener noreferrer">从event loop规范探究javaScript异步及浏览器更新渲染时机<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>, 这篇文章内有对上述标准的翻译</p> <p>对于<strong>macrotask queue</strong>和<strong>microtask queue</strong>这里不做过多赘述</p> <hr> <p>这里介绍几个H5标准提到的一些名词</p> <ul><li><p><strong>Task</strong></p> <p><strong>macrotask queue</strong>中最先入队的回调函数</p> <div class="custom-block warning"><p class="custom-block-title">- 注意</p> <p>同步脚本也是一个<strong>Task</strong></p></div></li> <li><p><strong>Job</strong></p> <p><strong>microtask queue</strong>中最先入队的回调函数</p></li> <li><p><strong>Jobs</strong></p> <p><strong>microtask queue</strong>中的所有回调函数</p></li></ul> <h3 id="event-loop-流程"><a href="#event-loop-流程" class="header-anchor">#</a> Event Loop 流程</h3> <p><img src="/weblog/imgs/browser_event_loop/event_loop.png" alt="event loop"></p> <p>意思是, 浏览器在每一次的<code>Loop</code>中</p> <ol><li><p><strong>Task</strong>阶段: 先执行<strong>Task</strong>, 如果<strong>Task</strong>不存在的话就跳过<strong>Task</strong>阶段</p></li> <li><p><strong>Jobs</strong>阶段: <strong>Task</strong>阶段完成后, 进入<strong>Jobs</strong>阶段, 这个时候会执行所有存在的<strong>Job</strong>, 没有则跳过</p> <p>在<strong>Jobs</strong>阶段还可能会产生新的<strong>Job</strong></p> <p>e.g.</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'job 0'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'job 1'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// job 1 就是在本次jobs阶段中产生的job</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>新的<strong>job</strong>也会在当前<strong>Jobs</strong>阶段执行, <strong>Jobs</strong>阶段就是要清空所有的<strong>microtask queue</strong></p></li> <li><p><strong>IndexDB</strong>阶段: 清理所有的<strong>IndexDB</strong>事务</p></li> <li><p><strong>UI Render</strong>阶段: <code>javascript引擎</code>被挂起, <code>GUI引擎</code>唤醒, CPU开始根据<code>RenderLayoutObject</code>制作纹理传入<code>GPU</code></p></li> <li><p>等待下一个<strong>Task</strong>的响应，进行下一次的<code>Loop</code></p></li></ol> <hr> <h3 id="task和job事件"><a href="#task和job事件" class="header-anchor">#</a> Task和Job事件</h3> <h4 id="task"><a href="#task" class="header-anchor">#</a> Task</h4> <ul><li><code>setTimeout</code></li> <li><code>setInterval</code></li> <li><code>requestAnimationFrame</code></li> <li><code>xhr</code></li> <li><code>DOM Event</code></li> <li><code>MessageChannel</code></li></ul> <h4 id="job"><a href="#job" class="header-anchor">#</a> Job</h4> <ul><li><code>Promise.then</code></li> <li><code>MutationObserver</code></li></ul> <p>值得注意的是浏览器并不是只存在一个<strong>macrotask queue</strong>和一个<strong>microtask queue</strong>然后将回调函数推入队列中</p> <p>而是对于不同类型的回调函数, 推入相应类型的队列中, 在<code>Event Loop</code>调度的时候从几个队列中选择<code>Task</code>和<code>Job</code></p> <p>即:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>macrotask queue:
+  timer queue(setTimeout):
+  xhr queue(xhr):
+  DOM Event:
+
+microtask queue:
+  Promise:
+  MutationObserver:
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="event-loop的开始"><a href="#event-loop的开始" class="header-anchor">#</a> Event Loop的开始</h3> <p>当脚本开始执行的时候<code>Event Loop</code>就已经开始工作了</p> <p>一个错误的理解是: <strong>当同本脚本执行完毕后, 才开始<code>Event Loop</code>的调度</strong> ❌  ❌</p> <p>🌰</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'start'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'timeout'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> ts <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> te <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">while</span><span class="token punctuation">(</span>te <span class="token operator">-</span> ts <span class="token operator">&lt;</span> <span class="token number">3000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  te <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'job 0'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'job 1'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 按照错误的理解, 当同步脚本执行完毕后，进入Event Loop调度</span>
+<span class="token comment">// 此时应该优先执行Task, 即: timeout</span>
+<span class="token comment">// 所以期望的输出应该是</span>
+<span class="token comment">// start</span>
+<span class="token comment">// timeout</span>
+<span class="token comment">// job 0</span>
+<span class="token comment">// job 1</span>
+
+<span class="token comment">// 但是实际却并不是如此</span>
+<span class="token comment">// start</span>
+<span class="token comment">// job 0</span>
+<span class="token comment">// job 1</span>
+<span class="token comment">// timeout</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p><strong>这也就是前面提到的, 同步脚本是一个Task</strong></p> <h3 id="实践"><a href="#实践" class="header-anchor">#</a> 实践</h3> <p>采用最前面提到的🌰</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'script start'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">async1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">await</span> <span class="token function">async2</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'async1 end'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">async2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'async2 end'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">async1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'setTimeout'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+
+<span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token parameter">resolve</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Promise'</span><span class="token punctuation">)</span>
+  <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'promise1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'promise2'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'script end'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 同步脚本的执行就已经开始Event Loop</span>
+<span class="token comment">// ---------------- Task 阶段 ------------------------</span>
+<span class="token comment">// 1. console.log(script start)</span>
+<span class="token comment">// 2. async1();</span>
+<span class="token comment">//    2.1. await async2();</span>
+<span class="token comment">//      2.1.1. async2(); console.log(async2 end);</span>
+<span class="token comment">//      2.1.2. async2()返回了一个resolve状态的promise</span>
+<span class="token comment">//    2.2. Promise queue 被推入了一个job(job 0 -&gt; console.log(async1 end))</span>
+<span class="token comment">// 3. setTimeout(); 调起浏览器timer线程, 在0s后将console.log(setTimeout) 推入 Timeout queue (这里不考虑纳入标准的4ms, 因为经过我测试发现setTimeout(callback, 0)并不总是4ms, 还可能是1m..., 同时0s也更能说明问题)</span>
+<span class="token comment">// 4. new Promise(); -&gt; console.log(Promise);</span>
+<span class="token comment">//    4.1 将console.log('promise1')作为job推入Promise queue(job 1 -&gt; console.log('promise1'))</span>
+<span class="token comment">// 5. console.log('script end')</span>
+<span class="token comment">// 函数的伪调用栈为</span>
+
+<span class="token comment">// callback stack(实际的调用栈不是这样的, 这里只是为了更好的说明问题，需要注意, 这里更像是callback queue):</span>
+<span class="token comment">//    console.log(script start); // 1</span>
+<span class="token comment">//    console.log(async2 end);   // 2.1.1</span>
+<span class="token comment">//    console.log(Promise);      // 4</span>
+<span class="token comment">//    console.log(script end);   // 5</span>
+
+<span class="token comment">// macrotask queue:</span>
+<span class="token comment">//      timeout queue:</span>
+<span class="token comment">//          console.log(setTimeout); // 3</span>
+
+<span class="token comment">// microtask queue</span>
+<span class="token comment">//      promise queue:</span>
+<span class="token comment">//          job0 -&gt; console.log(async1 end)  // 2.2</span>
+<span class="token comment">//          job1 -&gt; console.log(promise1)    // 4.1</span>
+
+<span class="token comment">// 执行callback stack</span>
+<span class="token comment">// script start</span>
+<span class="token comment">// async2 end</span>
+<span class="token comment">// Promise</span>
+<span class="token comment">// script end</span>
+
+<span class="token comment">// ------------Task 阶段结束, 进入Jobs阶段-----------------</span>
+<span class="token comment">// 将microtask queue 按照依次出队，压入callback stack</span>
+<span class="token comment">// callback stack</span>
+<span class="token comment">//    job0 -&gt; console.log(async1 end)  // 2.2</span>
+<span class="token comment">//    job1 -&gt; console.log(promise1)    // 4.1</span>
+
+<span class="token comment">// macrotask queue:</span>
+<span class="token comment">//      timeout queue:</span>
+<span class="token comment">//          console.log(setTimeout); // 3</span>
+
+<span class="token comment">// microtask queue</span>
+<span class="token comment">//      promise queue:</span>
+<span class="token comment">//</span>
+
+<span class="token comment">// 执行callback stack</span>
+<span class="token comment">// async1 end</span>
+<span class="token comment">// promise1</span>
+
+<span class="token comment">// 但是需要注意的是 在执行job1结束后, promise queue 又入队了新的job(job 2 -&gt; console.log(promise2))</span>
+<span class="token comment">// microtask queue</span>
+<span class="token comment">//      promise queue:</span>
+<span class="token comment">//          job 2 -&gt; console.log(promise2)</span>
+
+<span class="token comment">// 推入callback stack 执行后得到</span>
+
+<span class="token comment">// microtask queue</span>
+<span class="token comment">//      promise queue:</span>
+
+<span class="token comment">// Jobs阶段结束</span>
+
+<span class="token comment">// -------------- IndexDB 事务 ---------------------</span>
+<span class="token comment">// -------------- UI Render 阶段 -------------------</span>
+
+<span class="token comment">// 此时macrotask Queue还存在一个Task</span>
+<span class="token comment">// macrotask queue:</span>
+<span class="token comment">//      timeout queue:</span>
+<span class="token comment">//          console.log(setTimeout); // 3</span>
+
+<span class="token comment">// 进入下一次 Loop 的 Task阶段</span>
+
+<span class="token comment">// 所以能得到</span>
+<span class="token comment">// script start</span>
+<span class="token comment">// async2 end</span>
+<span class="token comment">// Promise</span>
+<span class="token comment">// script end</span>
+<span class="token comment">// async1 end</span>
+<span class="token comment">// promise1</span>
+<span class="token comment">// promise2</span>
+<span class="token comment">// setTimeout</span>
+<span class="token comment">// 这样的输出结果</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br></div></div><h2 id="ui-render"><a href="#ui-render" class="header-anchor">#</a> UI Render</h2> <p><code>UI Render</code>阶段, <strong>GUI引擎</strong>开始工作, <strong>javascript引擎</strong>被挂起, <strong>CPU</strong>开始绘制纹理输入<strong>GPU</strong></p> <p><code>UI Render</code>是浏览器实现<code>batch render</code>的核心逻辑</p> <p>看一下🌰</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token string">'200px'</span><span class="token punctuation">;</span>
+div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token string">'300px'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 这样的代码浏览器只会制作一个纹理, 而不是制作2个纹理</span>
+
+<span class="token comment">// 可以这样理解</span>
+<span class="token comment">// GUI引擎维护了一个队列</span>
+
+<span class="token comment">// 在执行div.style.top = '200px'; 时 </span>
+<span class="token comment">// javascript 引擎 通知 GUI引擎 入队一个div.style.top = 200的回调函数</span>
+
+<span class="token comment">// 同理, 这个队列中维护了2个回调</span>
+<span class="token comment">// gui queue:</span>
+<span class="token comment">//    div.style.top = 200</span>
+<span class="token comment">//    div.style.top = 300</span>
+
+<span class="token comment">// 在UI Render阶段清空队列任务, 绘制纹理</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="transition动画"><a href="#transition动画" class="header-anchor">#</a> Transition动画</h3> <p><strong>UI Render</strong> 一个具体的应用就是<code>transition</code>动画</p> <p>🌰</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>div<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+    <span class="token selector">#div</span> <span class="token punctuation">{</span>
+      <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 想让这个div在文档加载完成后右200px的位置滚动到300px的位置 --&gt;</span>
+<span class="token comment">&lt;!-- 我们需要添加一些javascript代码 --&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// example 1</span>
+div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token string">'200px'</span><span class="token punctuation">;</span>
+div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>transition <span class="token operator">=</span> <span class="token string">'top linear 1s'</span><span class="token punctuation">;</span>
+div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token string">'300px'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 如果你有经验的话，你知道它一定是不行的</span>
+
+<span class="token comment">// 你可能会这样</span>
+<span class="token comment">// example 2</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token string">'300px'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 不知道你没有想过为什么要么做</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>其实这也和<code>Event Loop</code>有关</p> <p>我们知道过渡动画需要<strong>start</strong>和<strong>end</strong>2种状态, 这就意味着<strong>GUI</strong>需要相应的制作2个纹理</p> <p>而在上面的例子中</p> <ul><li><p><code>example 1</code></p> <p>由于发生了一次<code>Event Loop</code>, 所以有1个<code>UI Render</code>, 生成了1个纹理, 所以没有产生过渡</p></li> <li><p><code>example 2</code></p> <p>发生了2次<code>Event Loop</code>, 有2个<code>UI Render</code>, 并且2次的<code>UI Render</code>队列都不是空的, 所以产生了2个纹理, 对应了2个<code>top</code>状态, 所以过渡动画生效</p></li></ul> <p>你也可以这样</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> port1<span class="token punctuation">,</span> port <span class="token number">2</span><span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MessageChannel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+port1<span class="token punctuation">.</span><span class="token function-variable function">onmessage</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token string">'300px'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+port2<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>但是这样则不可以</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token string">'300px'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 因为这是一个job 而不是一个新的task</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="gui引擎的唤醒"><a href="#gui引擎的唤醒" class="header-anchor">#</a> GUI引擎的唤醒</h3> <p>GUI引擎的唤醒有2种方式</p> <ul><li><p><code>UI Render</code></p> <p>前面提到过, <code>UI Render</code>阶段会挂起<code>javascript 引擎</code>, 唤醒<code>GUI引擎</code></p></li> <li><p><code>回流</code></p> <p>前面提到过, 浏览器具有<code>batch render</code>功能, 统一在<code>UI Render</code>阶段制作纹理</p> <p>但是在某些需要读取元素位置的回流操作上, 可以打破上述规则, 在非<code>UI Render</code>的阶段唤醒<code>GUI 引擎</code>制作纹理</p> <p>像前面提到的<code>transition</code>的 🌰 , 为了实现过渡效果我们还可以这样</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token string">'200px'</span><span class="token punctuation">;</span>
+div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>transition <span class="token operator">=</span> <span class="token string">'top linear 1s'</span><span class="token punctuation">;</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">getBoundingClientRect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 唤醒GUI引擎, 根据维护的队列内容绘制纹理(top = 200)</span>
+
+div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token string">'300px'</span><span class="token punctuation">;</span>
+<span class="token comment">// 在本次 Event Loop 的 UI Render阶段 绘制纹理(top = 300)</span>
+
+<span class="token comment">// 这也是可行的</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></li></ul> <h2 id="settimeout-setinterval-requsetanimationframe差异"><a href="#settimeout-setinterval-requsetanimationframe差异" class="header-anchor">#</a> setTimeout, setInterval, requsetAnimationFrame差异</h2> <h3 id="浏览器是如何渲染元素的"><a href="#浏览器是如何渲染元素的" class="header-anchor">#</a> 浏览器是如何渲染元素的</h3> <p><a href="">TODO 这里是一个单独的内容</a></p> <p>简单来说就是</p> <ol><li><code>GUI 引擎</code>不定时根据<code>javascript 引擎</code>维护的<code>RenderLayoutObject</code>绘制纹理</li></ol> <ul><li>这里就涉及到<strong>GUI 引擎的唤醒</strong>( <code>UI Render</code>, <code>回流</code>)</li></ul> <ol start="2"><li><p>将绘制出的纹理传入<strong>GPU</strong></p></li> <li><p><strong>GPU</strong>不定时将纹理<strong>paint</strong>到页面上(这个时间就是 1 / 浏览器刷新频率)</p></li></ol> <p>对于某些开始了<strong>GPU 加速</strong>的<strong>layer</strong>, 则跳过了<strong>CPU绘制纹理的过程</strong></p> <h3 id="跳帧"><a href="#跳帧" class="header-anchor">#</a> 跳帧</h3> <p>跳帧是一种逻辑上的正确, 但是在UI表现上是错误的</p> <p>🌰</p> <p>一个人以<strong>1m/s</strong> 的 速度跑了10s</p> <p>你以<strong>1hz</strong>的频率眨眼</p> <p>所以你能看到的这个人的位移过程是</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>1m -&gt; 2m -&gt; 3m -&gt; 4m -&gt; ... 10m
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>但是如果某次你突然迷眼了, 你可能用了5s来清理👀 , 等你再次看这个人的时候他可能已经跑完了</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>1m -&gt; 2m -&gt; 3m -&gt; 4m -&gt; 5m -&gt; 10m
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><code>5m -&gt; 10m</code>的过程就是跳帧</p> <h3 id="卡顿"><a href="#卡顿" class="header-anchor">#</a> 卡顿</h3> <p>卡顿和跳帧相反, 是逻辑上的错误, UI正确</p> <p>还是这个人在🏃‍</p> <p>不过其速度是 0.00001m/s</p> <p>这看起来好像是个没开发完的机器人🤖️</p> <p>这还算是跑步么?</p> <p>卡顿一般都是由于 渲染动画的时间设置不正确</p> <h3 id="setinterval"><a href="#setinterval" class="header-anchor">#</a> setInterval</h3> <p>用<code>setInterval</code>实现动画最大的弊病在于其很可能会出现跳帧的情况</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> offset <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  offset <span class="token operator">+=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+  div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> offset <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span> <span class="token operator">/</span> <span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>这段代码期望CPU 每1000 / 60 ms 绘制一个纹理, 传给GPU</p> <p>但是实际并不总是如此, 根据前面<code>Event Loop</code>的内容, 假如前一个<strong>Task</strong>发生了5 * 1000 / 60ms的阻塞</p> <p>那么当前<strong>macrotask queue</strong>应该是这样的</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>macrotask queue:
+    interval queue: 
+        task 0 -&gt; offset += 10;
+        task 1 -&gt; offset += 10;
+        task 2 -&gt; offset += 10;
+        task 3 -&gt; offset += 10;
+        task 4 -&gt; offset += 10;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>这个时候对于<code>task 0, task 1, task 2, task 3, task 4</code>这些<strong>Task</strong>而言就失去了<code>1000 / 60</code>的时间间隔</p> <p><strong>GPU</strong>直接在下次<strong>paint</strong>的时候将最终结果<code>offset = 60</code> 绘制 到 页面上</p> <p>即:</p> <p><code>setInterval</code>会发生跳帧</p> <h3 id="settimeout"><a href="#settimeout" class="header-anchor">#</a> setTimeout</h3> <p>使用<code>setTimeout</code>就不会出现跳帧的现象, 因为<code>setTimeout</code>实现的动画是在最后产生了下一个<strong>Task</strong>, 即使前一个<strong>Loop</strong>发生阻塞, <strong>macrotask queue</strong>也不会像<code>setInterval</code>一样堆积了很多的<strong>Animation Task</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> offest <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  offset <span class="token operator">+=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+  div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> offset <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span>animation<span class="token punctuation">,</span> <span class="token number">1000</span> <span class="token operator">/</span> <span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">animation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><hr> <p>看来多么的美好 !!!</p> <p>但是<code>setTimout</code>设置的时间要足够合适</p> <p>太大或者太小都会有其他问题</p> <ul><li><p>时间间隔很小, 可能会有性能问题</p> <p>浏览器<strong>GPU</strong>绘制1次, <strong>CPU</strong>绘制了多个纹理, 我们知道<code>GUI</code>和<code>JS</code>是互斥的</p> <p><strong>GPU</strong>只使用到了最后一个纹理, 其他都被浪费, <code>javascript 引擎</code>被无意义的挂起</p></li> <li><p>时间间隔很大, 可能会卡顿</p></li></ul> <hr> <p>所以这个时间间隔尽量和<strong>GPU</strong>每次绘制的时间间隔一致(浏览器刷新频率)</p> <p>一般浏览器刷新是<code>60HZ</code>(平均)</p> <p>这也是我们总设置<code>1000 / 60</code>的原因</p> <p>但是毕竟浏览器的刷新频率是一个动态的值, 所以后面<code>H5</code>提出了<code>requestAnimationFrame</code>这个API</p> <h3 id="requestanimationframe"><a href="#requestanimationframe" class="header-anchor">#</a> requestAnimationFrame</h3> <p><code>requestAnimationFrame</code>期望回调函数在浏览器刷新<code>frame</code>前执行</p> <p>用它实现<code>js</code>动画就是一个动态设置时间的<code>setTimeout</code>, 并且这个时间总是最合适的</p> <p>这就保证了, 在<strong>GPU</strong>绘制前, <strong>CPU</strong>总是输入给<strong>GPU</strong>一个纹理</p> <p>世界美好了 ！！</p> <h2 id="node-event-loop"><a href="#node-event-loop" class="header-anchor">#</a> Node Event Loop</h2> <p>node event loop 是基于 <code>libuv</code>实现的, 挺乱的, 暂时没有整理</p> <p>TODO 这里应该是一个链接</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/arkusa/askura/edit/master/docs/browser/processing_model.md" target="_blank" rel="noopener noreferrer">编辑此页面</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">10/20/2020, 8:37:55 AM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/weblog/assets/js/app.73afb69f.js" defer></script><script src="/weblog/assets/js/2.b1d48028.js" defer></script><script src="/weblog/assets/js/12.1aa44b2f.js" defer></script>
+  </body>
+</html>

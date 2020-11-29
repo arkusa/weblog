@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>IFrame Cross Domain | askura</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="askura's weblog">
+    <link rel="preload" href="/weblog/assets/css/0.styles.bd84e9de.css" as="style"><link rel="preload" href="/weblog/assets/js/app.73afb69f.js" as="script"><link rel="preload" href="/weblog/assets/js/2.b1d48028.js" as="script"><link rel="preload" href="/weblog/assets/js/10.5e5257d2.js" as="script"><link rel="prefetch" href="/weblog/assets/js/11.ac268403.js"><link rel="prefetch" href="/weblog/assets/js/12.1aa44b2f.js"><link rel="prefetch" href="/weblog/assets/js/13.d254d810.js"><link rel="prefetch" href="/weblog/assets/js/14.99e6dc6d.js"><link rel="prefetch" href="/weblog/assets/js/15.b4307193.js"><link rel="prefetch" href="/weblog/assets/js/16.889db329.js"><link rel="prefetch" href="/weblog/assets/js/17.f907b394.js"><link rel="prefetch" href="/weblog/assets/js/18.eea8f088.js"><link rel="prefetch" href="/weblog/assets/js/19.84c994ab.js"><link rel="prefetch" href="/weblog/assets/js/20.91a0790a.js"><link rel="prefetch" href="/weblog/assets/js/21.f225089f.js"><link rel="prefetch" href="/weblog/assets/js/22.4271b9d7.js"><link rel="prefetch" href="/weblog/assets/js/23.29f5f4b4.js"><link rel="prefetch" href="/weblog/assets/js/24.12b1d527.js"><link rel="prefetch" href="/weblog/assets/js/25.e84d37ad.js"><link rel="prefetch" href="/weblog/assets/js/26.b50519d9.js"><link rel="prefetch" href="/weblog/assets/js/27.15235234.js"><link rel="prefetch" href="/weblog/assets/js/28.8a9df4eb.js"><link rel="prefetch" href="/weblog/assets/js/29.9b595a2b.js"><link rel="prefetch" href="/weblog/assets/js/3.94d94b8f.js"><link rel="prefetch" href="/weblog/assets/js/30.cf77db1b.js"><link rel="prefetch" href="/weblog/assets/js/31.27e718fb.js"><link rel="prefetch" href="/weblog/assets/js/32.a51ac16d.js"><link rel="prefetch" href="/weblog/assets/js/33.e2fb7862.js"><link rel="prefetch" href="/weblog/assets/js/34.4f32cadf.js"><link rel="prefetch" href="/weblog/assets/js/4.a24ff65c.js"><link rel="prefetch" href="/weblog/assets/js/5.a6ef23be.js"><link rel="prefetch" href="/weblog/assets/js/6.c64d5164.js"><link rel="prefetch" href="/weblog/assets/js/7.05e16fa0.js"><link rel="prefetch" href="/weblog/assets/js/8.f29158ab.js"><link rel="prefetch" href="/weblog/assets/js/9.7ebc8f6b.js">
+    <link rel="stylesheet" href="/weblog/assets/css/0.styles.bd84e9de.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/weblog/" class="home-link router-link-active"><!----> <span class="site-name">askura</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTTP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/net/http/cookie.html" class="nav-link">
+  COOKIE
+</a></li></ul></li><li class="dropdown-item"><h4>
+          web安全
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/safety/web/csrf.html" class="nav-link">
+  CSRF
+</a></li><li class="dropdown-subitem"><a href="/weblog/safety/web/xss.html" class="nav-link">
+  XSS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="GIT" class="dropdown-title"><span class="title">GIT</span> <span class="arrow down"></span></button> <button type="button" aria-label="GIT" class="mobile-dropdown-title"><span class="title">GIT</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          远程仓库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/git/remotes/clone.html" class="nav-link">
+  clone
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/fetch.html" class="nav-link">
+  fetch
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/pull.html" class="nav-link">
+  pull
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/push.html" class="nav-link">
+  push
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/git/branch.html" class="nav-link">
+  branch
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/git/checkout.html" class="nav-link">
+  checkout
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><span class="title">CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CSS" class="mobile-dropdown-title"><span class="title">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Layout
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/css/layout/holy_grail.html" class="nav-link">
+  圣杯布局揭秘
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/css/contain_block.html" class="nav-link">
+  包含块(position定位)
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/css/stacking_context.html" class="nav-link">
+  Stacking Context
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/css/box_model.html" class="nav-link">
+  Box Model
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="VIM" class="dropdown-title"><span class="title">VIM</span> <span class="arrow down"></span></button> <button type="button" aria-label="VIM" class="mobile-dropdown-title"><span class="title">VIM</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          插件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/vim/plugins/airline.html" class="nav-link">
+  airline
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="TMUX" class="dropdown-title"><span class="title">TMUX</span> <span class="arrow down"></span></button> <button type="button" aria-label="TMUX" class="mobile-dropdown-title"><span class="title">TMUX</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/tmux/theme.html" class="nav-link">
+  theme
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="REDUX" class="dropdown-title"><span class="title">REDUX</span> <span class="arrow down"></span></button> <button type="button" aria-label="REDUX" class="mobile-dropdown-title"><span class="title">REDUX</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/redux/struct.html" class="nav-link">
+  我理解的redux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Browser" class="dropdown-title"><span class="title">Browser</span> <span class="arrow down"></span></button> <button type="button" aria-label="Browser" class="mobile-dropdown-title"><span class="title">Browser</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Net
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/browser/net/cross_domain.html" class="nav-link">
+  Cross Domain
+</a></li><li class="dropdown-subitem"><a href="/weblog/browser/net/jsonp.html" class="nav-link">
+  JSONP
+</a></li><li class="dropdown-subitem"><a href="/weblog/browser/net/iframe_cross.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  IFrame Cross
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Render
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/browser/render/parse_document.html" class="nav-link">
+  Parse Document
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/browser/processing_model.html" class="nav-link">
+  Processing Model
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ES6
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/javascript/ES6/Promise/api.html" class="nav-link">
+  Promise API
+</a></li><li class="dropdown-subitem"><a href="/weblog/javascript/ES6/Promise/polyfill.html" class="nav-link">
+  Promise Polyfill
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/javascript/regExp.html" class="nav-link">
+  RegExp
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/javascript/function.html" class="nav-link">
+  函数
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工程化" class="dropdown-title"><span class="title">前端工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工程化" class="mobile-dropdown-title"><span class="title">前端工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/engineering/tree_shaking.html" class="nav-link">
+  Tree Shaking
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="设计模式" class="dropdown-title"><span class="title">设计模式</span> <span class="arrow down"></span></button> <button type="button" aria-label="设计模式" class="mobile-dropdown-title"><span class="title">设计模式</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          OOP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/design_pattern/oop/decorator.html" class="nav-link">
+  Decorator Pattern
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="一些有意思的东西" class="dropdown-title"><span class="title">一些有意思的东西</span> <span class="arrow down"></span></button> <button type="button" aria-label="一些有意思的东西" class="mobile-dropdown-title"><span class="title">一些有意思的东西</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/interesting/git_credential.html" class="nav-link">
+  讨厌的credential.helper=osxkeychain
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/vue/preface.html" class="nav-link">
+  对Vue的认知
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Threejs" class="dropdown-title"><span class="title">Threejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Threejs" class="mobile-dropdown-title"><span class="title">Threejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/threejs/struct.html" class="nav-link">
+  初识webgl
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTTP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/net/http/cookie.html" class="nav-link">
+  COOKIE
+</a></li></ul></li><li class="dropdown-item"><h4>
+          web安全
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/safety/web/csrf.html" class="nav-link">
+  CSRF
+</a></li><li class="dropdown-subitem"><a href="/weblog/safety/web/xss.html" class="nav-link">
+  XSS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="GIT" class="dropdown-title"><span class="title">GIT</span> <span class="arrow down"></span></button> <button type="button" aria-label="GIT" class="mobile-dropdown-title"><span class="title">GIT</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          远程仓库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/git/remotes/clone.html" class="nav-link">
+  clone
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/fetch.html" class="nav-link">
+  fetch
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/pull.html" class="nav-link">
+  pull
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/push.html" class="nav-link">
+  push
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/git/branch.html" class="nav-link">
+  branch
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/git/checkout.html" class="nav-link">
+  checkout
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><span class="title">CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CSS" class="mobile-dropdown-title"><span class="title">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Layout
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/css/layout/holy_grail.html" class="nav-link">
+  圣杯布局揭秘
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/css/contain_block.html" class="nav-link">
+  包含块(position定位)
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/css/stacking_context.html" class="nav-link">
+  Stacking Context
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/css/box_model.html" class="nav-link">
+  Box Model
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="VIM" class="dropdown-title"><span class="title">VIM</span> <span class="arrow down"></span></button> <button type="button" aria-label="VIM" class="mobile-dropdown-title"><span class="title">VIM</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          插件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/vim/plugins/airline.html" class="nav-link">
+  airline
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="TMUX" class="dropdown-title"><span class="title">TMUX</span> <span class="arrow down"></span></button> <button type="button" aria-label="TMUX" class="mobile-dropdown-title"><span class="title">TMUX</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/tmux/theme.html" class="nav-link">
+  theme
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="REDUX" class="dropdown-title"><span class="title">REDUX</span> <span class="arrow down"></span></button> <button type="button" aria-label="REDUX" class="mobile-dropdown-title"><span class="title">REDUX</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/redux/struct.html" class="nav-link">
+  我理解的redux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Browser" class="dropdown-title"><span class="title">Browser</span> <span class="arrow down"></span></button> <button type="button" aria-label="Browser" class="mobile-dropdown-title"><span class="title">Browser</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Net
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/browser/net/cross_domain.html" class="nav-link">
+  Cross Domain
+</a></li><li class="dropdown-subitem"><a href="/weblog/browser/net/jsonp.html" class="nav-link">
+  JSONP
+</a></li><li class="dropdown-subitem"><a href="/weblog/browser/net/iframe_cross.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  IFrame Cross
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Render
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/browser/render/parse_document.html" class="nav-link">
+  Parse Document
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/browser/processing_model.html" class="nav-link">
+  Processing Model
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ES6
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/javascript/ES6/Promise/api.html" class="nav-link">
+  Promise API
+</a></li><li class="dropdown-subitem"><a href="/weblog/javascript/ES6/Promise/polyfill.html" class="nav-link">
+  Promise Polyfill
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/javascript/regExp.html" class="nav-link">
+  RegExp
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/javascript/function.html" class="nav-link">
+  函数
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工程化" class="dropdown-title"><span class="title">前端工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工程化" class="mobile-dropdown-title"><span class="title">前端工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/engineering/tree_shaking.html" class="nav-link">
+  Tree Shaking
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="设计模式" class="dropdown-title"><span class="title">设计模式</span> <span class="arrow down"></span></button> <button type="button" aria-label="设计模式" class="mobile-dropdown-title"><span class="title">设计模式</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          OOP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/design_pattern/oop/decorator.html" class="nav-link">
+  Decorator Pattern
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="一些有意思的东西" class="dropdown-title"><span class="title">一些有意思的东西</span> <span class="arrow down"></span></button> <button type="button" aria-label="一些有意思的东西" class="mobile-dropdown-title"><span class="title">一些有意思的东西</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/interesting/git_credential.html" class="nav-link">
+  讨厌的credential.helper=osxkeychain
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/vue/preface.html" class="nav-link">
+  对Vue的认知
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Threejs" class="dropdown-title"><span class="title">Threejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Threejs" class="mobile-dropdown-title"><span class="title">Threejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/threejs/struct.html" class="nav-link">
+  初识webgl
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>IFrame Cross Domain</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/weblog/browser/net/iframe_cross.html#document-domain" class="sidebar-link">document.domain</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/weblog/browser/net/iframe_cross.html#step" class="sidebar-link">step</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/net/iframe_cross.html#实现" class="sidebar-link">实现</a></li></ul></li><li><a href="/weblog/browser/net/iframe_cross.html#window-name" class="sidebar-link">window.name</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/weblog/browser/net/iframe_cross.html#step-2" class="sidebar-link">step</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/net/iframe_cross.html#实现-2" class="sidebar-link">实现</a></li><li class="sidebar-sub-header"><a href="/weblog/browser/net/iframe_cross.html#c" class="sidebar-link">C</a></li></ul></li><li><a href="/weblog/browser/net/iframe_cross.html#window-hash" class="sidebar-link">window.hash</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/weblog/browser/net/iframe_cross.html#实现-3" class="sidebar-link">实现</a></li></ul></li><li><a href="/weblog/browser/net/iframe_cross.html#postmessage" class="sidebar-link">postMessage</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/weblog/browser/net/iframe_cross.html#api" class="sidebar-link">API</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="iframe-cross-domain"><a href="#iframe-cross-domain" class="header-anchor">#</a> IFrame Cross Domain</h1> <p>借助于<strong>iframe</strong>实现的跨域一般都是用来 共享<strong>本地存储</strong>的信息, 基本不涉及<code>HTTP</code>请求</p> <p>比如B 想要获得 A 下面的<code>localStorage</code></p> <p>主要有以下几种方式</p> <h2 id="document-domain"><a href="#document-domain" class="header-anchor">#</a> document.domain</h2> <p><strong>document.domain</strong>的方式适用于父/子域间共享信息, 通过设置<code>document.domain</code>, 可以让2个页面同源</p> <p>这样页面A 就 可以直接操作 页面B(DOM, BOM...)</p> <p>我们将需要共享的信息存放到页面 B 的<code>storage</code>中, 这样任何和B 是父/子域的页面, 只要设置了正确的<code>document.domain</code>就可以得到页面A 存放的信息</p> <p>🌰</p> <p><code>page A</code>: 需要共享信息的页面</p> <p><code>page B</code>: 需要共享信息的页面</p> <p><code>page C</code>: 存放共享信息的页面</p> <h3 id="step"><a href="#step" class="header-anchor">#</a> step</h3> <ol><li>A, B, C设置相同的<code>document.domain</code></li> <li>A 和 B 通过 <code>iframe</code> 加载页面 C</li> <li>通过操作 C 的 API 存/取信息</li></ol> <h3 id="实现"><a href="#实现" class="header-anchor">#</a> 实现</h3> <h4 id="page-c"><a href="#page-c" class="header-anchor">#</a> page C</h4> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>domain <span class="token operator">=</span> <span class="token string">'domain.com'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="page-a-b"><a href="#page-a-b" class="header-anchor">#</a> page (A | B)</h4> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>domain <span class="token operator">=</span> <span class="token string">'domain.com'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">iframeShare</span><span class="token punctuation">(</span><span class="token parameter">url</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> w <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token parameter">v</span> <span class="token operator">=&gt;</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>w<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+        <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token function">handler</span><span class="token punctuation">(</span>w<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token keyword">const</span> iframe <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'iframe'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      iframe<span class="token punctuation">.</span>style<span class="token punctuation">.</span>display <span class="token operator">=</span> <span class="token string">'none'</span><span class="token punctuation">;</span>
+      iframe<span class="token punctuation">.</span>src <span class="token operator">=</span> url<span class="token punctuation">;</span>
+      document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>iframe<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      iframe<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        w <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>contentWindow<span class="token punctuation">.</span>window<span class="token punctuation">;</span>
+        <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token function">handler</span><span class="token punctuation">(</span>w<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      iframe<span class="token punctuation">.</span><span class="token function-variable function">onerror</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        w <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token function">reject</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> 
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">getCookie</span><span class="token punctuation">(</span><span class="token parameter">w</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> w<span class="token punctuation">.</span>document<span class="token punctuation">.</span>cookie<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">iframeShare</span><span class="token punctuation">(</span><span class="token string">'http://b.domain.com:5001/domain/C.html'</span><span class="token punctuation">)</span><span class="token punctuation">(</span>getCookie<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">cookie</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>cookie<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><hr> <p>这里提到的都是父/子域名下的跨域本地信息共享, 下面的几种方法适用于所有域名</p> <h2 id="window-name"><a href="#window-name" class="header-anchor">#</a> window.name</h2> <p>利用<code>window.name</code> 传值</p> <p><code>window.name</code>是一个特殊的值，如字面: 窗口的名字</p> <p>这个属性有一个特点, 他不会随着窗口的变化而改变</p> <p>包括:</p> <ul><li><p><code>window.location.href ...</code></p></li> <li><p><code>iframe.src 改变</code></p></li></ul> <p>只要还是同一个<code>tab | iframe</code>那么<code>window.name</code>就不会改变</p> <p>所以, 我们可以在共享信息的页面将一些信息挂载到属于它的 <code>window.name</code> 上, 然后我们更改它的<code>src</code>, 让这个<code>iframe.src = 一个主站下面的页面</code>, 这样我们就实现了信息的跨站共享</p> <h3 id="step-2"><a href="#step-2" class="header-anchor">#</a> step</h3> <p>我们需要3个页面</p> <p><code>page A</code>, 主站
+<code>page A/A1</code>, 主站下面的一个子路径
+<code>page B</code>, 存放共享信息的页面</p> <ol><li><p>B 中 映射了一些操作, 并且执行相应的操作, 将结果挂载到<code>window.name</code>上</p></li> <li><p>A 页面 通过 <code>iframe</code> 嵌入 B, 将操作 和 数据 通过拼接 url(queryString, hash)的方式传入 B</p></li> <li><p>B 加载完成后，解析url, 处理, 然后将 <code>iframe.src</code> 指向 <code>A/A1</code>, 这里需要是同步脚本, 如果是异步的话就需要特殊处理</p> <p>比如将<code>page A/A1</code>, 通过 url 传入 B, 由 B 控制 <code>window.location.href</code> 改变</p> <p>在 A 中 polling <code>window.name | window.src</code></p></li> <li><p>此时<code>A</code>和<code>A1</code>是同源的, 并且改变<code>iframe.src</code> <code>window.name</code>没有改变</p></li> <li><p>通过<code>iframe.contentWindow.window.name</code>得到共享数据</p></li></ol> <h3 id="实现-2"><a href="#实现-2" class="header-anchor">#</a> 实现</h3> <h4 id="a"><a href="#a" class="header-anchor">#</a> A</h4> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">iframeShare</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> subUrl<span class="token punctuation">,</span> operationString</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  url <span class="token operator">+=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">#</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>operationString<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token parameter">v</span> <span class="token operator">=&gt;</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> iframe <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'iframe'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      iframe<span class="token punctuation">.</span>src <span class="token operator">=</span> url<span class="token punctuation">;</span>
+      iframe<span class="token punctuation">.</span>style<span class="token punctuation">.</span>display <span class="token operator">=</span> <span class="token string">'none'</span><span class="token punctuation">;</span>
+
+      iframe<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>src <span class="token operator">===</span> url<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          iframe<span class="token punctuation">.</span>src <span class="token operator">=</span> subUrl<span class="token punctuation">;</span>
+          <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token function">handler</span><span class="token punctuation">(</span>iframe<span class="token punctuation">.</span>contentWindow<span class="token punctuation">.</span>window<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      iframe<span class="token punctuation">.</span><span class="token function-variable function">onerror</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        
+        <span class="token function">reject</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">iframeShare</span><span class="token punctuation">(</span><span class="token string">'http://c.csp.com:3006/'</span><span class="token punctuation">,</span> <span class="token string">'http://a.domain.com:3005/B'</span><span class="token punctuation">,</span> <span class="token string">'getCookie'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> <span class="token string">'cookie'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h3 id="c"><a href="#c" class="header-anchor">#</a> C</h3> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> operationMap <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">getCookie</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> hash <span class="token operator">=</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>hash<span class="token punctuation">.</span><span class="token function">subString</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+window<span class="token punctuation">.</span>name <span class="token operator">=</span> operationMap<span class="token punctuation">[</span>hash<span class="token punctuation">]</span> <span class="token operator">?</span> operationMap<span class="token punctuation">[</span>hash<span class="token punctuation">]</span> <span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>Tips: <code>window.name</code>挂载的数据不能超过2MB</p> <h2 id="window-hash"><a href="#window-hash" class="header-anchor">#</a> window.hash</h2> <p><code>window.hash</code>的思路和<code>window.name</code>基本一样, 区别就是只是实现方式不一样而已</p> <ul><li><p><code>page A</code>获得信息是响应式的, 只能通过以下几点方式. 而 使用<code>window.name</code>可以主动控制逻辑的响应</p> <ol><li><p>通过<code>window.onhashchange</code>被动触发</p></li> <li><p>polling某个值是否存在</p></li></ol></li> <li><p><code>window.name</code>将信息挂载到<code>window.name</code>上,  而<code>window.hash</code>一般通过更改<code>page A</code>的hash 实现</p></li> <li><p><code>window.name</code>可以将<code>page A/A1</code>的url 在 <code>A</code> 下设置, 而<code>window.hash</code>只能通过url 传给 <code>page B</code> 由B 控制url 变化</p></li></ul> <p>总之流程都是是这样的</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>          <span class="token punctuation">(</span>operation, data<span class="token punctuation">)</span>               <span class="token punctuation">(</span>data, url change <span class="token operator">|</span> window.name<span class="token punctuation">)</span>
+page A -------------------------<span class="token operator">&gt;</span> page B --------------------------------------<span class="token operator">&gt;</span> page A/A1
+       <span class="token operator">&lt;</span> ---------------------------------------------------------------------
+                <span class="token punctuation">(</span>data, window.name <span class="token operator">|</span> polling <span class="token operator">|</span> hashchange<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="实现-3"><a href="#实现-3" class="header-anchor">#</a> 实现</h3> <p>TODO, 都是类似的，抽空实现吧</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>window<span class="token punctuation">.</span><span class="token function-variable function">onhashchange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">iframeShare</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> handler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>Tips: url 太长可能会414的 哦</p> <hr> <p>我比较推荐用<code>window.name</code>, 如果你一定要<code>window.name</code>和<code>window.hash</code>中选择一个的话</p> <h2 id="postmessage"><a href="#postmessage" class="header-anchor">#</a> postMessage</h2> <p><code>postMessage</code>是H5 提出的 本地信息跨域共享的一个标准方法, 有了它, 前面的方法都是屁 ~ ..</p> <p>当然还是了解一下他们的思路比较好</p> <p>使用<code>postMessage</code>可以直接在2个不用源的站点间传递数据, 而不想<code>window.name/ hash</code>一样需要使用一个和主站同源的子页面帮助回传信息</p> <h3 id="api"><a href="#api" class="header-anchor">#</a> API</h3> <p><code>postMessage</code>继承自<code>MessageChannel</code></p> <p>它又2个 API 配合一起完成工作</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 响应发送的数据 API</span>
+window<span class="token punctuation">.</span><span class="token function-variable function">onmessage</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e<span class="token operator">:</span> <span class="token punctuation">{</span> data<span class="token punctuation">,</span> source<span class="token punctuation">,</span> origin <span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+   
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 发送数据 API</span>
+window<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span>message<span class="token operator">:</span> any<span class="token punctuation">,</span> targetWindowOrigin<span class="token operator">:</span> <span class="token string">'*'</span> <span class="token operator">|</span> <span class="token string">'protocal://domain:port'</span><span class="token punctuation">,</span> transfers<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>这里的window 指的是同一个页面, 即:</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// page A -&gt; 嵌入 page B 的iframe</span>
+pageBWindow<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> targetWindowOrigin<span class="token punctuation">,</span> transfers<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// pageB</span>
+window<span class="token punctuation">.</span><span class="token function-variable function">onmessage</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="window-postmessage-message-any-targetwindoworigin-protocal-domain-port-transfers"><a href="#window-postmessage-message-any-targetwindoworigin-protocal-domain-port-transfers" class="header-anchor">#</a> window.postMessage(message: any, targetWindowOrigin: '*' | 'protocal://domain:port', transfers);</h4> <ul><li><strong>message</strong></li></ul> <p>message 是发送给目标窗口的信息</p> <ul><li><strong>targetWindowOrigin</strong></li></ul> <p>targetWindowOrigin 是对目标窗口的限制🚫 , 支持<code>* | protocal://domain:port</code></p> <p>一般我们不使用<code>*</code>(无限制), 因为这是一种安全策略</p> <p>防止攻击者通过<code>XSS</code>改变了我们引入的<code>iframe</code>路径，将一些敏感信息传递给攻击者的页面</p> <p>只有当目标窗口的<code>window.location.origin</code>和我们传入的<strong>targetWindowOrigin</strong>完全一致的时候才能发送数据</p> <ul><li><strong>transfers</strong></li></ul> <p>一些通信的对象的集合..., 感觉没什么大能耐</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">[</span>port1<span class="token punctuation">,</span> port2<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MessageChannel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+targetWindow<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span><span class="token string">'message'</span><span class="token punctuation">,</span> <span class="token string">'*'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>port1<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 这样目标窗口就能接收到 port1 然后通过port1 和port2 进行通信...</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="window-onmessage-function-e-data-source-origin-void"><a href="#window-onmessage-function-e-data-source-origin-void" class="header-anchor">#</a> window.onmessage = function(e: { data, source, origin }): void</h4></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/arkusa/askura/edit/master/docs/browser/net/iframe_cross.md" target="_blank" rel="noopener noreferrer">编辑此页面</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/19/2020, 9:48:36 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/weblog/assets/js/app.73afb69f.js" defer></script><script src="/weblog/assets/js/2.b1d48028.js" defer></script><script src="/weblog/assets/js/10.5e5257d2.js" defer></script>
+  </body>
+</html>

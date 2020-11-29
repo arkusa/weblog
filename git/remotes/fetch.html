@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git fetch | askura</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="askura's weblog">
+    <link rel="preload" href="/weblog/assets/css/0.styles.bd84e9de.css" as="style"><link rel="preload" href="/weblog/assets/js/app.73afb69f.js" as="script"><link rel="preload" href="/weblog/assets/js/2.b1d48028.js" as="script"><link rel="preload" href="/weblog/assets/js/20.91a0790a.js" as="script"><link rel="prefetch" href="/weblog/assets/js/10.5e5257d2.js"><link rel="prefetch" href="/weblog/assets/js/11.ac268403.js"><link rel="prefetch" href="/weblog/assets/js/12.1aa44b2f.js"><link rel="prefetch" href="/weblog/assets/js/13.d254d810.js"><link rel="prefetch" href="/weblog/assets/js/14.99e6dc6d.js"><link rel="prefetch" href="/weblog/assets/js/15.b4307193.js"><link rel="prefetch" href="/weblog/assets/js/16.889db329.js"><link rel="prefetch" href="/weblog/assets/js/17.f907b394.js"><link rel="prefetch" href="/weblog/assets/js/18.eea8f088.js"><link rel="prefetch" href="/weblog/assets/js/19.84c994ab.js"><link rel="prefetch" href="/weblog/assets/js/21.f225089f.js"><link rel="prefetch" href="/weblog/assets/js/22.4271b9d7.js"><link rel="prefetch" href="/weblog/assets/js/23.29f5f4b4.js"><link rel="prefetch" href="/weblog/assets/js/24.12b1d527.js"><link rel="prefetch" href="/weblog/assets/js/25.e84d37ad.js"><link rel="prefetch" href="/weblog/assets/js/26.b50519d9.js"><link rel="prefetch" href="/weblog/assets/js/27.15235234.js"><link rel="prefetch" href="/weblog/assets/js/28.8a9df4eb.js"><link rel="prefetch" href="/weblog/assets/js/29.9b595a2b.js"><link rel="prefetch" href="/weblog/assets/js/3.94d94b8f.js"><link rel="prefetch" href="/weblog/assets/js/30.cf77db1b.js"><link rel="prefetch" href="/weblog/assets/js/31.27e718fb.js"><link rel="prefetch" href="/weblog/assets/js/32.a51ac16d.js"><link rel="prefetch" href="/weblog/assets/js/33.e2fb7862.js"><link rel="prefetch" href="/weblog/assets/js/34.4f32cadf.js"><link rel="prefetch" href="/weblog/assets/js/4.a24ff65c.js"><link rel="prefetch" href="/weblog/assets/js/5.a6ef23be.js"><link rel="prefetch" href="/weblog/assets/js/6.c64d5164.js"><link rel="prefetch" href="/weblog/assets/js/7.05e16fa0.js"><link rel="prefetch" href="/weblog/assets/js/8.f29158ab.js"><link rel="prefetch" href="/weblog/assets/js/9.7ebc8f6b.js">
+    <link rel="stylesheet" href="/weblog/assets/css/0.styles.bd84e9de.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/weblog/" class="home-link router-link-active"><!----> <span class="site-name">askura</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTTP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/net/http/cookie.html" class="nav-link">
+  COOKIE
+</a></li></ul></li><li class="dropdown-item"><h4>
+          web安全
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/safety/web/csrf.html" class="nav-link">
+  CSRF
+</a></li><li class="dropdown-subitem"><a href="/weblog/safety/web/xss.html" class="nav-link">
+  XSS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="GIT" class="dropdown-title"><span class="title">GIT</span> <span class="arrow down"></span></button> <button type="button" aria-label="GIT" class="mobile-dropdown-title"><span class="title">GIT</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          远程仓库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/git/remotes/clone.html" class="nav-link">
+  clone
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/fetch.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  fetch
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/pull.html" class="nav-link">
+  pull
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/push.html" class="nav-link">
+  push
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/git/branch.html" class="nav-link">
+  branch
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/git/checkout.html" class="nav-link">
+  checkout
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><span class="title">CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CSS" class="mobile-dropdown-title"><span class="title">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Layout
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/css/layout/holy_grail.html" class="nav-link">
+  圣杯布局揭秘
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/css/contain_block.html" class="nav-link">
+  包含块(position定位)
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/css/stacking_context.html" class="nav-link">
+  Stacking Context
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/css/box_model.html" class="nav-link">
+  Box Model
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="VIM" class="dropdown-title"><span class="title">VIM</span> <span class="arrow down"></span></button> <button type="button" aria-label="VIM" class="mobile-dropdown-title"><span class="title">VIM</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          插件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/vim/plugins/airline.html" class="nav-link">
+  airline
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="TMUX" class="dropdown-title"><span class="title">TMUX</span> <span class="arrow down"></span></button> <button type="button" aria-label="TMUX" class="mobile-dropdown-title"><span class="title">TMUX</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/tmux/theme.html" class="nav-link">
+  theme
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="REDUX" class="dropdown-title"><span class="title">REDUX</span> <span class="arrow down"></span></button> <button type="button" aria-label="REDUX" class="mobile-dropdown-title"><span class="title">REDUX</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/redux/struct.html" class="nav-link">
+  我理解的redux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Browser" class="dropdown-title"><span class="title">Browser</span> <span class="arrow down"></span></button> <button type="button" aria-label="Browser" class="mobile-dropdown-title"><span class="title">Browser</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Net
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/browser/net/cross_domain.html" class="nav-link">
+  Cross Domain
+</a></li><li class="dropdown-subitem"><a href="/weblog/browser/net/jsonp.html" class="nav-link">
+  JSONP
+</a></li><li class="dropdown-subitem"><a href="/weblog/browser/net/iframe_cross.html" class="nav-link">
+  IFrame Cross
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Render
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/browser/render/parse_document.html" class="nav-link">
+  Parse Document
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/browser/processing_model.html" class="nav-link">
+  Processing Model
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ES6
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/javascript/ES6/Promise/api.html" class="nav-link">
+  Promise API
+</a></li><li class="dropdown-subitem"><a href="/weblog/javascript/ES6/Promise/polyfill.html" class="nav-link">
+  Promise Polyfill
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/javascript/regExp.html" class="nav-link">
+  RegExp
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/javascript/function.html" class="nav-link">
+  函数
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工程化" class="dropdown-title"><span class="title">前端工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工程化" class="mobile-dropdown-title"><span class="title">前端工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/engineering/tree_shaking.html" class="nav-link">
+  Tree Shaking
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="设计模式" class="dropdown-title"><span class="title">设计模式</span> <span class="arrow down"></span></button> <button type="button" aria-label="设计模式" class="mobile-dropdown-title"><span class="title">设计模式</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          OOP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/design_pattern/oop/decorator.html" class="nav-link">
+  Decorator Pattern
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="一些有意思的东西" class="dropdown-title"><span class="title">一些有意思的东西</span> <span class="arrow down"></span></button> <button type="button" aria-label="一些有意思的东西" class="mobile-dropdown-title"><span class="title">一些有意思的东西</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/interesting/git_credential.html" class="nav-link">
+  讨厌的credential.helper=osxkeychain
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/vue/preface.html" class="nav-link">
+  对Vue的认知
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Threejs" class="dropdown-title"><span class="title">Threejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Threejs" class="mobile-dropdown-title"><span class="title">Threejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/threejs/struct.html" class="nav-link">
+  初识webgl
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTTP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/net/http/cookie.html" class="nav-link">
+  COOKIE
+</a></li></ul></li><li class="dropdown-item"><h4>
+          web安全
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/safety/web/csrf.html" class="nav-link">
+  CSRF
+</a></li><li class="dropdown-subitem"><a href="/weblog/safety/web/xss.html" class="nav-link">
+  XSS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="GIT" class="dropdown-title"><span class="title">GIT</span> <span class="arrow down"></span></button> <button type="button" aria-label="GIT" class="mobile-dropdown-title"><span class="title">GIT</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          远程仓库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/git/remotes/clone.html" class="nav-link">
+  clone
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/fetch.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  fetch
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/pull.html" class="nav-link">
+  pull
+</a></li><li class="dropdown-subitem"><a href="/weblog/git/remotes/push.html" class="nav-link">
+  push
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/git/branch.html" class="nav-link">
+  branch
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/git/checkout.html" class="nav-link">
+  checkout
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><span class="title">CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CSS" class="mobile-dropdown-title"><span class="title">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Layout
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/css/layout/holy_grail.html" class="nav-link">
+  圣杯布局揭秘
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/css/contain_block.html" class="nav-link">
+  包含块(position定位)
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/css/stacking_context.html" class="nav-link">
+  Stacking Context
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/css/box_model.html" class="nav-link">
+  Box Model
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="VIM" class="dropdown-title"><span class="title">VIM</span> <span class="arrow down"></span></button> <button type="button" aria-label="VIM" class="mobile-dropdown-title"><span class="title">VIM</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          插件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/vim/plugins/airline.html" class="nav-link">
+  airline
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="TMUX" class="dropdown-title"><span class="title">TMUX</span> <span class="arrow down"></span></button> <button type="button" aria-label="TMUX" class="mobile-dropdown-title"><span class="title">TMUX</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/tmux/theme.html" class="nav-link">
+  theme
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="REDUX" class="dropdown-title"><span class="title">REDUX</span> <span class="arrow down"></span></button> <button type="button" aria-label="REDUX" class="mobile-dropdown-title"><span class="title">REDUX</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/redux/struct.html" class="nav-link">
+  我理解的redux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Browser" class="dropdown-title"><span class="title">Browser</span> <span class="arrow down"></span></button> <button type="button" aria-label="Browser" class="mobile-dropdown-title"><span class="title">Browser</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Net
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/browser/net/cross_domain.html" class="nav-link">
+  Cross Domain
+</a></li><li class="dropdown-subitem"><a href="/weblog/browser/net/jsonp.html" class="nav-link">
+  JSONP
+</a></li><li class="dropdown-subitem"><a href="/weblog/browser/net/iframe_cross.html" class="nav-link">
+  IFrame Cross
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Render
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/browser/render/parse_document.html" class="nav-link">
+  Parse Document
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/browser/processing_model.html" class="nav-link">
+  Processing Model
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ES6
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/javascript/ES6/Promise/api.html" class="nav-link">
+  Promise API
+</a></li><li class="dropdown-subitem"><a href="/weblog/javascript/ES6/Promise/polyfill.html" class="nav-link">
+  Promise Polyfill
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/weblog/javascript/regExp.html" class="nav-link">
+  RegExp
+</a></li><li class="dropdown-item"><!----> <a href="/weblog/javascript/function.html" class="nav-link">
+  函数
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工程化" class="dropdown-title"><span class="title">前端工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工程化" class="mobile-dropdown-title"><span class="title">前端工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/engineering/tree_shaking.html" class="nav-link">
+  Tree Shaking
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="设计模式" class="dropdown-title"><span class="title">设计模式</span> <span class="arrow down"></span></button> <button type="button" aria-label="设计模式" class="mobile-dropdown-title"><span class="title">设计模式</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          OOP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/weblog/design_pattern/oop/decorator.html" class="nav-link">
+  Decorator Pattern
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="一些有意思的东西" class="dropdown-title"><span class="title">一些有意思的东西</span> <span class="arrow down"></span></button> <button type="button" aria-label="一些有意思的东西" class="mobile-dropdown-title"><span class="title">一些有意思的东西</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/interesting/git_credential.html" class="nav-link">
+  讨厌的credential.helper=osxkeychain
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/vue/preface.html" class="nav-link">
+  对Vue的认知
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Threejs" class="dropdown-title"><span class="title">Threejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Threejs" class="mobile-dropdown-title"><span class="title">Threejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weblog/threejs/struct.html" class="nav-link">
+  初识webgl
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>git fetch</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/weblog/git/remotes/fetch.html#同步远端文件到本地" class="sidebar-link">同步远端文件到本地</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/weblog/git/remotes/fetch.html#管理远端文件的同步" class="sidebar-link">管理远端文件的同步</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/weblog/git/remotes/fetch.html#fetch-head" class="sidebar-link">FETCH_HEAD</a></li><li class="sidebar-sub-header"><a href="/weblog/git/remotes/fetch.html#refspec" class="sidebar-link">refspec</a></li><li class="sidebar-sub-header"><a href="/weblog/git/remotes/fetch.html#config-remote-fetch" class="sidebar-link">config.remote.fetch</a></li><li class="sidebar-sub-header"><a href="/weblog/git/remotes/fetch.html#refs-remotes-remote-name" class="sidebar-link">refs/remotes/remote_name/*</a></li><li class="sidebar-sub-header"><a href="/weblog/git/remotes/fetch.html#总结" class="sidebar-link">总结</a></li></ul></li><li><a href="/weblog/git/remotes/fetch.html#一些比较常用的options" class="sidebar-link">一些比较常用的OPTIONS</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/weblog/git/remotes/fetch.html#all" class="sidebar-link">--all</a></li><li class="sidebar-sub-header"><a href="/weblog/git/remotes/fetch.html#append" class="sidebar-link">--append</a></li><li class="sidebar-sub-header"><a href="/weblog/git/remotes/fetch.html#depth-depth" class="sidebar-link">--depth=depth</a></li><li class="sidebar-sub-header"><a href="/weblog/git/remotes/fetch.html#unshalldow" class="sidebar-link">--unshalldow</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-fetch"><a href="#git-fetch" class="header-anchor">#</a> git fetch</h1> <h2 id="同步远端文件到本地"><a href="#同步远端文件到本地" class="header-anchor">#</a> 同步远端文件到本地</h2> <p>我们知道GIT是一个基于快照的版本控制系统, GIT同步远端的过程其实就是下载远端所有文件快照(所有的<code>SHA-1</code>, 除了blob-SHA-1外, 还包括tree-SHA-1和commit-SHA-1)的过程, 即: <code>.git/refs/objects/</code>下的文件</p> <p>同时由于GIT<code>分支</code>的概念, 我们并不一定总是下载所有的SHA-1, 有时我们可能只需要某个分支上所有SHA-1</p> <p>甚至于, 如果你的网络较差, 可以只下载某个分支下的几个SHA-1</p> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>在fetch<code>SHA-1</code>的时候需要提供一个<code>commit-SHA-1</code>, 相当于树的头节点, 通过这个节点GIT就可以得到基于其的所有文件内容</p></div> <div class="language-html line-numbers-mode"><pre class="language-html"><code>              mast
+               |
+1 -&gt; 2 -&gt; 3 -&gt; 4
+     | -&gt; 5 -&gt; 6
+               |
+              dev
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>上面是一个简略的commit-SHA-1的历史, 2是分支节点</p> <ul><li><p>我们可以将其全部同步到本地</p></li> <li><p>也可以同步某个分支(dev)到本地</p> <p>1 -&gt; 2 -&gt; 5 -&gt; 6</p></li> <li><p>也可以同步5到本地</p> <p>1 -&gt; 2 -&gt; 5</p></li> <li><p>甚至于只同步6到本地</p> <p>6</p></li></ul> <p>这样我们就能得到想到的文件历史</p> <h2 id="管理远端文件的同步"><a href="#管理远端文件的同步" class="header-anchor">#</a> 管理远端文件的同步</h2> <h3 id="fetch-head"><a href="#fetch-head" class="header-anchor">#</a> FETCH_HEAD</h3> <p>这个文件记录了fetch的末端commit-SHA-1, 默认每次fetch 都会对其进行overwrite</p> <p>同时<code>FETCH_HEAD</code>在GIT系统中也是作为关键字存在的</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> merge FETCH_HEAD
+<span class="token comment"># 将fetch的内容merge到当前分支上</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="refspec"><a href="#refspec" class="header-anchor">#</a> refspec</h3> <p><code>refspec</code>是GIT定义的一种引用规范<code>+&lt;src&gt;:&lt;dict&gt;</code>, git push 也使用到了这个引用</p> <p>其中:</p> <p><code>+</code>表示强制更新</p> <p><code>&lt;src&gt;</code>表示路径, 即: 发送SHA-1的GIT仓库下的路径</p> <p><code>&lt;dict&gt;</code>表示磁盘位置, 即: 存储SHA-1的GIT仓库下的磁盘位置</p> <p>如果指定了<code>refspec</code>的话除了将末端SHA-1记录到<code>FETCH_HEAD</code>上, 还会根据<code>&lt;dict&gt;</code>创建文件并记录SHA-1</p> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p><code>&lt;dict&gt;</code>和<code>&lt;src&gt;</code>有缩略表示, 如何缩略请看<a href="/git/refspec">refspec</a></p> <p><code>git fetch origin master:dev</code>, 会被GIT解析为<code>git fetch origin refs/heads/master:refs/heads/dev</code></p> <p>意思是将远端refs/heads/master(master分支)索引到的SHA-1下载, 并且将末端SHA-1记录到本地refs/heads/dev(如果不存在相当于基于origin/master分支创建了本地dev分支)</p></div> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>fetch 和 push 所指的<code>&lt;dict&gt;</code>和<code>&lt;src&gt;</code> 是相反的</p> <p>fetch <code>&lt;src&gt;</code> -&gt; 远端 <code>&lt;dict&gt;</code> -&gt; 本地</p> <p>push <code>&lt;src&gt;</code> -&gt; 本地 <code>&lt;dict&gt;</code> -&gt; 远端</p> <hr> <p>同时如果<code>&lt;src&gt;</code>和<code>&lt;dict&gt;</code>一致的话 push可以合写, fetch不可以</p> <p><code>git push origin master</code> 相当于 <code>git push origin master:master</code></p> <p><code>git fetch origin master</code> 只是表示下载远端master分支, 并存储到FETCH_HEAD上. 至于是否存储到其他文件, 比如远端分支的镜像上, 则要依据<code>config.remote.fetch</code>的配置</p> <hr></div> <h3 id="config-remote-fetch"><a href="#config-remote-fetch" class="header-anchor">#</a> config.remote.fetch</h3> <p>执行</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> remote <span class="token function">add</span> origin url
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>.git/config会被写入如下配置</p> <div class="language-git line-numbers-mode"><pre class="language-git"><code>[remote <span class="token string">&quot;origin&quot;</span>]
+  url = url
+  fetch = +refs/heads/*:refs/remotes/origin/*
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>如果没有指定<code>refspec</code>, <code>git fetch</code>会尝试应用这个配置, 除了将<code>SHA-1</code>记录到<code>FETCH_HEAD</code>外还将所有的远端分支都同步到本地远端的镜像上</p> <p>如果缺少这条配置</p> <div class="language-git line-numbers-mode"><pre class="language-git"><code>[remote <span class="token string">&quot;origin&quot;</span>]
+  url = url
+<span class="token comment">#  fetch = +refs/heads/*:refs/remotes/origin/*</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>GIT会将远端的<code>default branch</code>(一般是master)下载下来, 然后将<code>SHA-1</code>记录到<code>FETCH_HEAD</code>上</p> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p><code>git fetch origin dev</code></p> <p>像前面提到的一样, 这里的<code>dev</code>不是<code>refspec</code></p> <p>如果配置有<code>fetch = + refs/heads/*:refs/remotes/origin/*</code>, 除了同步到<code>FETCH_HEAD</code>外, 还会同步到远程的镜像分支上</p></div> <h3 id="refs-remotes-remote-name"><a href="#refs-remotes-remote-name" class="header-anchor">#</a> refs/remotes/remote_name/*</h3> <p>远程的镜像分支文件</p> <p>我们是根据这个文件目录, 和分支间的上下游关系才能知道当前分支是<code>ahead/behind</code>远程分支</p> <p>执行<code>git fetch</code>会根据<code>fetch = +refs/heads/*:refs/remotes/origin/*</code>将镜像更新</p> <h3 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h3> <p><code>git fetch [&lt;repo&gt; [&lt;refspec&gt;]] [options]</code></p> <ul><li><p>指定<code>refspec</code>则根据<code>refspec</code>下载和记录SHA-1</p></li> <li><p><code>git fetch origin dev</code>中的<code>dev</code>不属于<code>refspec</code></p></li> <li><p>在没有指定<code>refspec</code>的情况下应用<code>config.remote.fetch</code>(一般是默认的refspec, +refs/heads/<em>:refs/remotes/origin/</em>)</p></li> <li><p>没有<code>refspec</code>和<code>config.remote.fetch</code>的话只将SHA-1记录到<code>FETCH_HEAD</code></p></li></ul> <h2 id="一些比较常用的options"><a href="#一些比较常用的options" class="header-anchor">#</a> 一些比较常用的OPTIONS</h2> <h3 id="all"><a href="#all" class="header-anchor">#</a> --all</h3> <p>有时候我们有多个远程库, <code>--all</code>可以一起下载.</p> <p>相当于</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>git fetch origin
+git fetch originDev
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="append"><a href="#append" class="header-anchor">#</a> --append</h3> <p>前面提到<code>FETCH_HEAD</code>随着每次<code>fetch</code>都被overwrite, 通过<code>--append</code>改变其写入方式</p> <h3 id="depth-depth"><a href="#depth-depth" class="header-anchor">#</a> --depth=depth</h3> <p>最上面我们提到过可以单独下载SHA-1(6)的内容, 而忽略<code>parent's commit-SHA-1</code>, 这样就减少了下载的内容</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>git fetch origin master --depth=1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>只下载最近一次的提交</p> <h3 id="unshalldow"><a href="#unshalldow" class="header-anchor">#</a> --unshalldow</h3> <p>通过<code>--depth=depth</code>我们得到了一个不完整的GIT历史, 在<code>merge</code>, <code>rebase</code>...下会失败</p> <p><code>--unshalldow</code>是一个fix的方法, 可以重新让GIT变得完整</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/arkusa/askura/edit/master/docs/git/remotes/fetch.md" target="_blank" rel="noopener noreferrer">编辑此页面</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/12/2020, 10:24:10 AM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/weblog/assets/js/app.73afb69f.js" defer></script><script src="/weblog/assets/js/2.b1d48028.js" defer></script><script src="/weblog/assets/js/20.91a0790a.js" defer></script>
+  </body>
+</html>
